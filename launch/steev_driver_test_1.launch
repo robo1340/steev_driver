@@ -1,0 +1,11 @@
+<launch>
+	<arg name="serial_port" default = "/dev/ttyUSB0"/>
+	<arg name="baud_rate"   default = "38400" />
+
+<!--	<node name="transmitter" pkg="steev_driver" type="transmitter" output="screen"></node> -->
+<!--	<node name="receiver" pkg="steev_driver" type="receiver" output="screen"></node>       -->
+	
+	<node name="steevRXTX" pkg="steev_driver" type="steevRXTX" respawn="false" args="$(arg serial_port) $(arg baud_rate)" output="screen"></node>
+	<node name="steevPublisher" pkg="steev_driver" type="steevPublisher" respawn="false"></node>
+	<node name="requester" pkg="steev_driver" type="requester" output="screen"></node>
+</launch>

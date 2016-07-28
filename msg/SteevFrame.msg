@@ -1,0 +1,13 @@
+steev_driver/SteevSensor mainIR
+steev_driver/SteevSensor frontLeftIR
+steev_driver/SteevSensor frontRightIR
+steev_driver/SteevSensor leftIR
+steev_driver/SteevSensor rightIR
+steev_driver/SteevSensor rearIR
+steev_driver/SteevSensor compass
+
+steev_driver/SteevMechanicalOutputDevice panServo
+steev_driver/SteevMechanicalOutputDevice tiltServo
+steev_driver/SteevMechanicalOutputDevice motorLinear
+steev_driver/SteevMechanicalOutputDevice motorTurn
+
